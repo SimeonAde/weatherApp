@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(bg-image.jpg);
+  color: aliceblue;
+  background-size: cover;
+  background-position: top center;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+header input {
+  width: 100%;
+  padding: 20px 55px;
+  max-width: 400px;
+  border: none;
+  outline: none;
+  background-color: rgba(100, 86, 86, 0.3);
+  border-radius: 16px 0px 16px 0px;
+  color: #313131;
+  font-size: 20px;
+  font-weight: 300;
+  border-bottom: 3px solid #e94343;
+  transition: 0.2s ease-in-out;
+}
+
+input::placeholder {
+  color: rgb(241, 241, 241);
+}
+
+header input:focus {
+  background-color: rgba(255, 2552, 255, 0.7);
+}
+
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location .city {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.location .date {
+  color: #fff;
+  font-size: 16px;
+}
+
+.current .temp {
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  margin: 10px 0px 0px 0px;
+  text-shadow: 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.temp:hover {
+  cursor: pointer;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  margin: 0;
+}
+
+.current .click {
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  margin: 10px 0px 0px 0px;
+  text-shadow: 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.current .feelslike {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0px 0px 20px 0px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.current .hi-low {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
